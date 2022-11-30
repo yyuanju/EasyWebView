@@ -17,6 +17,7 @@ class SecondViewController: WebViewController {
         super.viewDidLoad()
         view.bringSubviewToFront(toolView)
         urlString = "https://www.google.com/"
+        urlString = "https://tw.yahoo.com/"
     }
 
     @IBAction func back(_ sender: Any) {
