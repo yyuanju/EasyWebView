@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		52C3418B2362AB910079975E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C3418A2362AB910079975E /* SecondViewController.swift */; };
 		52C3418D2362B1A90079975E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C3418C2362B1A90079975E /* FirstViewController.swift */; };
 		52D236D923B74D5A0039B582 /* String+HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D236D823B74D5A0039B582 /* String+HTML.swift */; };
+		A13397FB991A1E23A1BA2DE0 /* Pods_EasyWebView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98041B51394B7F56B7FC6899 /* Pods_EasyWebView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,9 @@
 		52C3418A2362AB910079975E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		52C3418C2362B1A90079975E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		52D236D823B74D5A0039B582 /* String+HTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HTML.swift"; sourceTree = "<group>"; };
+		754A5AA8A282C3658B21DBE4 /* Pods-EasyWebView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyWebView.debug.xcconfig"; path = "Target Support Files/Pods-EasyWebView/Pods-EasyWebView.debug.xcconfig"; sourceTree = "<group>"; };
+		98041B51394B7F56B7FC6899 /* Pods_EasyWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2E8A7C3F7BF390EEBEDA95A /* Pods-EasyWebView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyWebView.release.xcconfig"; path = "Target Support Files/Pods-EasyWebView/Pods-EasyWebView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,18 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13397FB991A1E23A1BA2DE0 /* Pods_EasyWebView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2472063B5DDC0D77FDB2E6A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98041B51394B7F56B7FC6899 /* Pods_EasyWebView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		529C39BB235D8D4D00D2E645 = {
 			isa = PBXGroup;
 			children = (
 				529C39F3235EAAE500D2E645 /* Source */,
 				529C39C6235D8D4D00D2E645 /* EasyWebView */,
 				529C39C5235D8D4D00D2E645 /* Products */,
+				E3BD599A51C9CD2B523506B0 /* Pods */,
+				2472063B5DDC0D77FDB2E6A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +109,15 @@
 			path = ../Source;
 			sourceTree = "<group>";
 		};
+		E3BD599A51C9CD2B523506B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				754A5AA8A282C3658B21DBE4 /* Pods-EasyWebView.debug.xcconfig */,
+				E2E8A7C3F7BF390EEBEDA95A /* Pods-EasyWebView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -101,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 529C39D8235D8D4E00D2E645 /* Build configuration list for PBXNativeTarget "EasyWebView" */;
 			buildPhases = (
+				75F0F0A4F544BF8D052575FD /* [CP] Check Pods Manifest.lock */,
 				529C39C0235D8D4D00D2E645 /* Sources */,
 				529C39C1235D8D4D00D2E645 /* Frameworks */,
 				529C39C2235D8D4D00D2E645 /* Resources */,
+				604DB85B588CB6E7D4237BE2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,6 +185,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		604DB85B588CB6E7D4237BE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyWebView/Pods-EasyWebView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyWebView/Pods-EasyWebView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyWebView/Pods-EasyWebView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75F0F0A4F544BF8D052575FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyWebView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		529C39C0235D8D4D00D2E645 /* Sources */ = {
@@ -307,20 +375,24 @@
 		};
 		529C39D9235D8D4E00D2E645 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 754A5AA8A282C3658B21DBE4 /* Pods-EasyWebView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = GL2VUTHN95;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2LQD85BYAP;
 				INFOPLIST_FILE = EasyWebView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.john.EasyWebView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsmc.EasyWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = dev_com_all;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = tsmc_distribution_profile_20230810;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -328,20 +400,24 @@
 		};
 		529C39DA235D8D4E00D2E645 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2E8A7C3F7BF390EEBEDA95A /* Pods-EasyWebView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = GL2VUTHN95;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2LQD85BYAP;
 				INFOPLIST_FILE = EasyWebView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.john.EasyWebView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsmc.EasyWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = dev_com_all;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = tsmc_distribution_profile_20230810;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
